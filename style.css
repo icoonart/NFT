@@ -1,108 +1,121 @@
-/* hr {
-    border: none; remove the default line
-    height: 1px; set the height of the line
-    background-color: black; set the color of the line
-    margin: 20px 0; add margin to the top and bottom
-    width: 100px;
-  } */
-  
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body{
-      background: hsl(217, 54%, 11%);
-  }
-  
-  .container{
-    /* border: 1px solid goldenrod; */
-    width: 350px;
-    height: 560px;
-    background:  hsl(216, 50%, 16%);
-    margin-left: 40%;
-    margin-top: 100px;
-    border-radius: 10px;
-    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.425);
-  }
+body {
+  background: hsl(217, 54%, 11%);
+  width: 100vw;
+}
 
-  .eq{
-    width: 300px;
-    height: 300px;
-    border-radius: 8px;
-    margin-left: 20px;
-    margin-top: 20px;
-  }
+.container {
+  width: 350px;
+  height: 560px;
+  background: hsl(216, 50%, 16%);
+  margin-left: 25%;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.425);
+}
 
-  .maze{
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+.eq {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
 
-  .space{
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    /* justify-content: space-between; */
-  }
+.maze {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-  .space img{
-    border: 2px solid white;
-    height: 40px;
-    border-radius: 100px;
-    margin-left: 20px;
-  }
+.space {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
 
-  .plus{
-    font-weight: 700;
-    color: beige;
-    font-size: 18px;
-    margin-top: 15px;
-    margin-left: 20px;
-  }
+.space img {
+  border: 2px solid white;
+  height: 40px;
+  border-radius: 100px;
+  margin-left: 20px;
+}
 
-  .our{
-    font-weight:300 ;
-    line-height: 1.2;
-    margin-top: 15px;
-    margin-left: 20px;
-    color: hsl(215, 51%, 70%);
-  }
+.plus {
+  font-weight: 700;
+  color: beige;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
 
-  .maze img{
-    margin-left: 25px;
-  }
+.our {
+  font-weight: 300;
+  line-height: 1.2;
+  margin-top: 15px;
+  margin-left: 20px;
+  color: hsl(215, 51%, 70%);
+}
 
-  .maze h4{
-    margin-right: 55px;
-    color: hsl(178, 100%, 50%);
-  }
+.maze img {
+  margin-left: 25px;
+}
 
-  .maze .day{
-    margin-right: 40px;
-    color: hsl(215, 51%, 70%) ;
-  }
+.maze h4 {
+  margin-right: 55px;
+  color: hsl(178, 100%, 50%);
+}
 
-  .space h4{
-    font-weight: 700;
-    color: #ffff;
-    margin-left:10px ;
-  }
+.maze .day {
+  margin-right: 40px;
+  color: hsl(215, 51%, 70%);
+}
 
-  span{
-    color: hsl(215, 51%, 70%);
-    font-weight: 300;
-  }
+.space h4 {
+  font-weight: 700;
+  color: #ffff;
+  margin-left: 10px;
+}
 
-  hr{
-    width: 300px;
-    margin-left: 20px;
-    border: 1px solid hsl(215, 32%, 27%);
-    
-  }
+span {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+hr {
+  width: 300px;
+  margin-left: 20px;
+  border: 1px solid hsl(215, 32%, 27%);
+
+}
+
+
+@media screen and (max-width:375px) {
+.container{
+  width: 300px;
+  height: 540px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.eq{
+  width: 260px;
+  height: 260px;
+}
+
+hr{
+  margin-left: 10px;
+  width: 280px;
+}
+
+.maze img{
+margin-left: 15px;
+}
+}
